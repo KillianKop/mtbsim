@@ -51,10 +51,11 @@ RUN cmake .. -G Ninja \
     -DEigen3_DIR=/usr/lib/cmake/eigen3 \
     -DCMAKE_INSTALL_PREFIX=${CHRONO_INSTALL_DIR} \
     -DNUMPY_INCLUDE_DIR=$(python3 -c 'import numpy; print(numpy.get_include())') \
+    -DCH_ENABLE_MODULE_IRRLICHT=ON \
     -DCH_ENABLE_MODULE_VEHICLE=ON && \
     ninja && ninja install
  
- 
+
 # Libs path
 ENV LD_LIBRARY_PATH="${CHRONO_INSTALL_DIR}/lib:${LD_LIBRARY_PATH}"
 
