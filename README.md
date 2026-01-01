@@ -7,15 +7,21 @@ For this project we need only core(default) and vehicule module
 
 ## (optional) build a simple application
 
-``` docker compose -f contrib/docker/docker-compose.yml up -d vnc
-docker ps ```
+```bash
+docker compose -f contrib/docker/docker-compose.yml up -d vnc
+docker ps
+```
 
-```docker compose -f contrib/docker/docker-compose.yml run --rm dev ```
-
-``` echo $DISPLAY ```
-
-``` cd ~/chrono-dev/template_project/build
-./my_demo ```
+```bash
+docker compose -f contrib/docker/docker-compose.yml run --rm dev
+```
+```bash
+echo $DISPLAY
+```
+```bash
+cd ~/chrono-dev/template_project/build
+./my_demo
+```
 
 
 
